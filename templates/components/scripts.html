@@ -1,0 +1,204 @@
+<!-- Adds JS for fancybox -->
+<script
+  type="text/javascript"
+  src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"
+></script>
+<style type="text/css">
+  .searchwp-live-search-results {
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    height: 0;
+    overflow: hidden;
+    z-index: 9999995; /* Exceed SearchWP Modal Search Form overlay. */
+    position: absolute;
+    display: none;
+  }
+
+  .searchwp-live-search-results-showing {
+    display: block;
+    opacity: 1;
+    height: auto;
+    overflow: auto;
+  }
+
+  .searchwp-live-search-no-results {
+    padding: 3em 2em 0;
+    text-align: center;
+  }
+
+  .searchwp-live-search-no-min-chars:after {
+    content: "Continue typing";
+    display: block;
+    text-align: center;
+    padding: 2em 2em 0;
+  }
+</style>
+<script>
+  var _SEARCHWP_LIVE_AJAX_SEARCH_BLOCKS = true;
+  var _SEARCHWP_LIVE_AJAX_SEARCH_ENGINE = "default";
+  var _SEARCHWP_LIVE_AJAX_SEARCH_CONFIG = "default";
+</script>
+<script
+  type="text/javascript"
+  src="/assets/wp-includes/js/dist/vendor/regenerator-runtime.min3937.js?ver=0.13.9"
+  id="regenerator-runtime-js"
+></script>
+<script
+  type="text/javascript"
+  src="/assets/wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0"
+  id="wp-polyfill-js"
+></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+  /* <![CDATA[ */
+  var wpcf7 = {
+    api: {
+      root: "https:\/\/tfiintl.com\/en\/wp-json\/",
+      namespace: "contact-form-7\/v1",
+    },
+  };
+  var wpcf7 = {
+    api: {
+      root: "https:\/\/tfiintl.com\/en\/wp-json\/",
+      namespace: "contact-form-7\/v1",
+    },
+  };
+  /* ]]> */
+</script>
+<script
+  type="text/javascript"
+  src="/assets/wp-content/plugins/contact-form-7/includes/js/index04dd.js?ver=5.5.6.1"
+  id="contact-form-7-js"
+></script>
+<script
+  type="text/javascript"
+  src="/assets/wp-content/themes/our_framework_v3.2.3/lib/bootstrap/js/bootstrap.minf049.js?ver=6.0"
+  id="bootstrap-js-js"
+></script>
+<script
+  type="text/javascript"
+  src="/assets/wp-content/themes/our_framework_v3.2.3/js/navigation11a8.js?ver=20120206"
+  id="our-navigation-js"
+></script>
+<script
+  type="text/javascript"
+  src="/assets/wp-content/themes/our_framework_v3.2.3/js/skip-link-focus-fix08e0.js?ver=20130115"
+  id="our-skip-link-focus-fix-js"
+></script>
+<script type="text/javascript" id="swp-live-search-client-js-extra">
+  /* <![CDATA[ */
+  var searchwp_live_search_params = [];
+  searchwp_live_search_params = {
+    ajaxurl: "https:\/\/tfiintl.com\/wp-admin\/admin-ajax.php",
+    origin_id: 10,
+    config: {
+      default: {
+        engine: "default",
+        input: { delay: 300, min_chars: 3 },
+        results: {
+          position: "bottom",
+          width: "auto",
+          offset: { x: 0, y: 5 },
+        },
+        spinner: {
+          lines: 12,
+          length: 8,
+          width: 3,
+          radius: 8,
+          scale: 1,
+          corners: 1,
+          color: "#424242",
+          fadeColor: "transparent",
+          speed: 1,
+          rotate: 0,
+          animation: "searchwp-spinner-line-fade-quick",
+          direction: 1,
+          zIndex: 2000000000,
+          className: "spinner",
+          top: "50%",
+          left: "50%",
+          shadow: "0 0 1px transparent",
+          position: "absolute",
+        },
+      },
+    },
+    msg_no_config_found: "No valid SearchWP Live Search configuration found!",
+    aria_instructions:
+      "When autocomplete results are available use up and down arrows to review and enter to go to the desired page. Touch device users, explore by touch or with swipe gestures.",
+  };
+  var searchwp_live_search_params = [];
+  searchwp_live_search_params = {
+    ajaxurl: "https:\/\/tfiintl.com\/wp-admin\/admin-ajax.php",
+    origin_id: 10,
+    config: {
+      default: {
+        engine: "default",
+        input: { delay: 300, min_chars: 3 },
+        results: {
+          position: "bottom",
+          width: "auto",
+          offset: { x: 0, y: 5 },
+        },
+        spinner: {
+          lines: 12,
+          length: 8,
+          width: 3,
+          radius: 8,
+          scale: 1,
+          corners: 1,
+          color: "#424242",
+          fadeColor: "transparent",
+          speed: 1,
+          rotate: 0,
+          animation: "searchwp-spinner-line-fade-quick",
+          direction: 1,
+          zIndex: 2000000000,
+          className: "spinner",
+          top: "50%",
+          left: "50%",
+          shadow: "0 0 1px transparent",
+          position: "absolute",
+        },
+      },
+    },
+    msg_no_config_found: "No valid SearchWP Live Search configuration found!",
+    aria_instructions:
+      "When autocomplete results are available use up and down arrows to review and enter to go to the desired page. Touch device users, explore by touch or with swipe gestures.",
+  };
+  /* ]]> */
+</script>
+<script
+  type="text/javascript"
+  src="/assets/wp-content/plugins/searchwp-live-ajax-search/assets/javascript/dist/script.min905d.js?ver=1.6.3"
+  id="swp-live-search-client-js"
+></script>
+
+<script type="text/javascript">
+  function ShowMod(ModId, ModTitle, ModImg, ModPos, ModCont) {
+    console.log(
+      ModId + "|" + ModTitle + "|" + ModImg + "|" + ModPos + "|" + ModCont
+    );
+    jQuery("#" + ModId).on("show.bs.modal", function (e) {
+      var modal = jQuery(this);
+      modal.find(".modal-title").text(ModTitle);
+      if (ModImg != "") {
+        modal.find(".modal-img").attr("src", ModImg);
+      } else {
+        modal.find(".modal-img").attr("src", "");
+      }
+      modal
+        .find(".modal-pos")
+        .html("<h6>" + ModPos + "</h6>" + "<p>" + ModCont + "</p>");
+    });
+    jQuery("#" + ModId).modal("show");
+  }
+
+  jQuery(document).ready(function ($) {
+    $("table").each(function () {
+      $(this).addClass("table-bordered");
+    });
+  });
+</script>
+
+<script src="/assets/wp-content/themes/our_framework_v3.2.3/js/parallax.js"></script>

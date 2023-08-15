@@ -1,0 +1,285 @@
+{% extends 'layouts/home-layout.html' %}
+<!----->
+{% block title %} Contact us {% endblock title %}
+<!----->
+
+{% block content %}
+<div class="contact-wrap">
+  <section
+    class="hero"
+    data-parallax="scroll"
+    data-image-src="/assets/images/contact-hero.jpg"
+  >
+    <div class="content wow fadeInLeft animated">
+      <h2 class="white">We'd Love to Hear from You</h2>
+    </div>
+  </section>
+  <section class="contact-sec2">
+    <div class="container">
+      <div class="tabs">
+        <h5 data-tab="corporate">CORPORATE</h5>
+        <h5 data-tab="investors">INVESTOR RELATIONS</h5>
+        <h5 data-tab="media">MEDIA RELATIONS</h5>
+        <hr />
+      </div>
+    </div>
+    <div class="contact-slide">
+      <div data-tab="corporate">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-xs-12 col-sm-6 col-md-3 box wow zoomIn animated"
+              data-wow-delay="0.2s"
+            >
+              <div class="content">
+                <h5>Executive Offices</h5>
+                <p>
+                  96 Disco Road<br />Etobicoke, ON<br />M9W 0A3<br />Tel.: 647
+                  725-4500 <br />
+
+                  <br />14881 Quorum Dr<br />Suite 700<br />Dallas, TX<br />75256
+                  USA<br />Tel.: 214 560-9616 <br />
+
+                  <br />1000 Semmes Ave<br />Richmond, VA<br />23224 USA<br />Tel.:
+                  800 333-7400
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xs-12 col-sm-6 col-md-3 box wow zoomIn animated"
+              data-wow-delay="0.2s"
+            >
+              <div class="content">
+                <h5>Head Office</h5>
+                <p>
+                  8801 Trans-Canada<br />Highway, Suite 500<br />Saint-Laurent,
+                  QC<br />H4S 1Z6<br />Tel.: 514 331-4000
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="investors" data-tab="investors">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-xs-12 col-sm-6 col-md-3 box wow zoomIn animated"
+              data-wow-delay="0.2s"
+            >
+              <div class="content">
+                <h5>Strategic or Financial Investor Information</h5>
+                <p>
+                  Alain Bédard<br />Chairman of the Board, President and CEO<br />Tel.:
+                  647 729-4079<br />
+                  abedard@tfiintl.com<br />
+                  <br />David Saperstein<br />Chief Financial Officer<br />Tel.:
+                  561 630-4358<br />
+                  dsaperstein@tfiintl.com
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xs-12 col-sm-6 col-md-3 box wow zoomIn animated"
+              data-wow-delay="0.2s"
+            >
+              <div class="content">
+                <h5>Shareholder Administration Information</h5>
+                <p>
+                  Josiane M. Langlois<br />Vice President, Legal Affairs and
+                  Corporate Secretary<br />Tel.: 514 331-4000<br />
+                  jlanglois@tfiintl.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="media" data-tab="media">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-xs-12 col-sm-6 col-md-3 box wow zoomIn animated"
+              data-wow-delay="0.2s"
+            >
+              <div class="content">
+                <h5>Media Relations</h5>
+                <p>
+                  Julie Coutu<br />Marketing & Communications Manager<br />Tel.:
+                  514 331-4048<br />
+                  jcoutu@tfiintl.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-sec3">
+    <div class="container-fluid">
+      <div class="inner-container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h5>Contact Us</h5>
+          </div>
+          <div
+            role="form"
+            class="wpcf7"
+            id="wpcf7-f25-o1"
+            lang="en-US"
+            dir="ltr"
+          >
+            <div class="screen-reader-response">
+              <p role="status" aria-live="polite" aria-atomic="true"></p>
+              <ul></ul>
+            </div>
+            <form
+              class="wpcf7-form init"
+              novalidate="novalidate"
+              data-status="init"
+            >
+              <div class="col-xs-12">
+                <label>
+                  Inquiry Type*<br />
+                  <span class="wpcf7-form-control-wrap menu-253"
+                    ><select
+                      name="menu-253"
+                      class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+                      aria-required="true"
+                      aria-invalid="false"
+                    >
+                      <option value="">---</option>
+                      <option value="Select an inquiry type">
+                        Select an inquiry type
+                      </option>
+                      <option value="Strategic financial information">
+                        Strategic financial information
+                      </option>
+                      <option value="Shareholder administration information">
+                        Shareholder administration information
+                      </option>
+                      <option value="Human resources">Human resources</option>
+                      <option value="Press and analysts">
+                        Press and analysts
+                      </option>
+                      <option value="Website comments">Website comments</option>
+                      <option value="Media relations">Media relations</option>
+                      <option value="Accessibility">Accessibility</option>
+                      <option value="Other">Other</option>
+                    </select></span
+                  >
+                </label>
+              </div>
+              <div class="col-xs-12">
+                <label>
+                  Your Name*<br />
+                  <span class="wpcf7-form-control-wrap name-100"
+                    ><input
+                      type="text"
+                      name="name-100"
+                      value=""
+                      size="40"
+                      class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                      aria-required="true"
+                      aria-invalid="false"
+                  /></span>
+                </label>
+              </div>
+              <div class="col-xs-12">
+                <label>
+                  Your Email*<br />
+                  <span class="wpcf7-form-control-wrap email-100"
+                    ><input
+                      type="email"
+                      name="email-100"
+                      value=""
+                      size="40"
+                      class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                      aria-required="true"
+                      aria-invalid="false"
+                  /></span>
+                </label>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <label>
+                  Company<br />
+                  <span class="wpcf7-form-control-wrap company-100"
+                    ><input
+                      type="text"
+                      name="company-100"
+                      value=""
+                      size="40"
+                      class="wpcf7-form-control wpcf7-text"
+                      aria-invalid="false"
+                  /></span>
+                </label>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <label>
+                  Phone Number<br />
+                  <span class="wpcf7-form-control-wrap phone-100"
+                    ><input
+                      type="text"
+                      name="phone-100"
+                      value=""
+                      size="40"
+                      class="wpcf7-form-control wpcf7-text"
+                      aria-invalid="false"
+                  /></span>
+                </label>
+              </div>
+              <div class="col-xs-12">
+                <label>
+                  Message*<br />
+                  <span class="wpcf7-form-control-wrap message-100">
+                    <textarea
+                      name="message-100"
+                      cols="40"
+                      rows="10"
+                      class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
+                      aria-required="true"
+                      aria-invalid="false"
+                    ></textarea>
+                  </span>
+                </label>
+              </div>
+
+              <div class="col-xs-12">
+                <p>
+                  <input
+                    type="submit"
+                    value="Use the live suport"
+                    class="wpcf7-form-control has-spinner wpcf7-submit"
+                    disabled
+                  />
+                </p>
+              </div>
+              <div class="wpcf7-response-output" aria-hidden="true"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock content %} {% block script %}
+<script type="text/javascript">
+  jQuery(document).ready(function ($) {
+    $(".contact-sec2 .tabs h5:first-of-type").addClass("selected");
+    $(".contact-sec2 .tabs h5").on("click", function (e) {
+      //Variables
+      var a = $(this).data("tab");
+      $(this).addClass("selected").siblings("h5").removeClass("selected");
+      $(".contact-sec2 .contact-slide>div").each(function () {
+        var b = $(this).data("tab");
+        if (a == b) {
+          $(this).show().siblings().hide();
+        }
+      });
+    });
+  });
+</script>
+
+{% endblock script %}

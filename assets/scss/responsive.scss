@@ -1,0 +1,280 @@
+/* [ RESPONSIVE DESIGN STYLES ] */
+
+/*================================================== */
+
+/*** Only Wide Screens ***/
+
+@media (min-width: 1600px) {
+}
+@media only screen and (max-width: 1024px) {
+  .home-hero {
+    height: auto !important;
+    video {
+      height: auto !important;
+    }
+  }
+}
+
+/*** Large Devices, Wide Screens ***/
+
+@media (min-width: 1200px) {
+}
+
+/*** Devices Width 767px and Up ***/
+
+@media (min-width: 767px) {
+}
+
+/*** Only Medium Devices, Desktops ***/
+
+@media (max-width: 1200px) and (min-width: 992px) {
+}
+
+/* Medium Devices, Desktops */
+
+@media (max-width: 1200px) {
+}
+
+/* Small Devices, Tablets */
+
+@media (max-width: 992px) {
+  .section-1 {
+    padding-bottom: 35px;
+    .content {
+      text-align: left;
+      top: auto;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+      margin: 30px auto 0;
+    }
+  }
+
+  #header {
+    padding: 10px 15px;
+    .logo-box {
+      img {
+        width: 165px;
+      }
+    }
+    .main-menu {
+      display: none;
+    }
+    .toggler {
+      button {
+        display: block;
+      }
+    }
+  }
+
+  .mobile-menu {
+    &.active {
+      display: block;
+    }
+
+    border-top: 4px solid green;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    padding-top: 100px;
+    z-index: 9;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+
+    .close-toggler {
+      position: absolute;
+      top: 21px;
+      right: 19px;
+      /* float: right; */
+      button {
+        background: transparent;
+        border: none;
+        i {
+          font-size: 30px;
+          color: #fff;
+        }
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+      li {
+        position: relative;
+        display: block;
+        a {
+          position: relative;
+          display: block;
+          padding: 15px;
+          font-size: 25px;
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: 400;
+
+          font-family: "Bai Jamjuree", sans-serif;
+          &:hover {
+            background: #ee3c42;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .section-2 {
+    padding: 75px 15px;
+    .content {
+      top: auto;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+    }
+  }
+  .section-3 {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  footer {
+    .right {
+      text-align: center;
+      padding: 40px 15px;
+    }
+    .left {
+      padding: 50px 15px;
+      .menu {
+        text-align: center;
+        .single {
+          text-align: left;
+        }
+      }
+    }
+    .footer-logo {
+      text-align: center;
+    }
+    .social {
+      text-align: center;
+      margin-top: 25px;
+    }
+  }
+  p,
+  a {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section-2 .content {
+    text-align: left;
+    padding: 0px 10px;
+  }
+  .section-3 .content {
+    margin-left: 10px;
+  }
+  footer {
+    .left {
+      position: relative;
+      .menu {
+        text-align: left;
+        margin-left: 15px;
+        .single:first-of-type {
+          margin-right: 80px;
+        }
+      }
+    }
+    .right .content {
+      max-width: 100%;
+      text-align: left;
+    }
+
+    .footer-logo {
+      text-align: left;
+      margin-left: 15px;
+    }
+    .social {
+      text-align: unset;
+      margin-top: 0px;
+      position: absolute;
+      top: 60px;
+      right: 25px;
+    }
+  }
+}
+
+/* Small Devices Potrait */
+@media (max-width: 767px) {
+  #header {
+    padding: 0px 15px;
+  }
+  .home-hero .content p {
+    display: none;
+  }
+  .home-hero {
+    .bottom-bar {
+      padding: 5px 0px;
+      height: 56px;
+      .inner-container {
+        .tile {
+          display: none;
+        }
+        .track-form {
+          display: block;
+
+          margin-top: 10px;
+          .btn-red {
+            padding: 7px 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .section-1 .acq,
+  .section-3 .acq {
+    flex-wrap: wrap;
+  }
+
+  .section-2 {
+    background-attachment: initial !important;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    .content {
+      .btn-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        button {
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    .box {
+      height: 560px;
+    }
+    .right .content .copyright {
+      margin-top: 50px;
+    }
+    .menu {
+      .single:first-of-type {
+        margin-right: 18%;
+      }
+    }
+    .social {
+      top: 65px;
+      right: 10px;
+    }
+    .box:last-child {
+      height: 480px;
+    }
+  }
+}

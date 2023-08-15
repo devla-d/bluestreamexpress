@@ -1,0 +1,116 @@
+{% extends 'layouts/home-layout.html' %}
+<!----->
+{% block title %} Solution {% endblock title %}
+<!----->
+
+{% block content %}
+<div class="solutions-wrap">
+  <div class="inner-menu">
+    <div class="inner-container">
+      <a href="/packages-and-courier/">PACKAGE AND COURIER</a>
+      <a href="/less-than-truckload/">LESS-THAN-TRUCKLOAD</a>
+
+      <a href="/logistics/">LOGISTICS</a>
+    </div>
+  </div>
+  <section
+    class="hero"
+    data-parallax="scroll"
+    data-image-src="/assets/images/solutions-hero.jpg"
+  >
+    <div class="content wow fadeInLeft animated">
+      <h2 class="white">
+        Decentralized Structure with the<br />Resources to Succeed.
+      </h2>
+    </div>
+  </section>
+  <section class="solutions-sec2">
+    <div class="content wow zoomIn animated" data-wow-delay="0.2s">
+      <p>
+        TFI International consists of four business segments, serviced through
+        more than 80 wholly-owned subsidiaries operating under their own brands.
+      </p>
+      <p>
+        Our service structure allows us to simultaneously reap the benefits of
+        specialization and economies of scale, efficiently allocate resources,
+        and capitalize on market opportunities. With this differentiated
+        approach, we are uniquely positioned to create shareholder value and
+        deliver quality service.
+      </p>
+    </div>
+  </section>
+
+  <section
+    class="solutions-tile"
+    data-parallax="scroll"
+    data-image-src="/assets/images/solutions-package-bg.jpg"
+  >
+    <a href="packages-and-courier/"
+      ><button class="btn-red wow slideInLeft animated" data-wow-delay="0.2s">
+        PACKAGE AND COURIER
+        <img src="/assets/images/btn-caret.png" /></button
+    ></a>
+  </section>
+  <section
+    class="solutions-tile"
+    data-parallax="scroll"
+    data-image-src="/assets/images/solutions-lessTruck-bg.jpg"
+  >
+    <a href="#"
+      ><button class="btn-red wow slideInLeft animated" data-wow-delay="0.3s">
+        LESS-THAN-TRUCKLOAD
+        <img src="/assets/images/btn-caret.png" /></button
+    ></a>
+  </section>
+  <section
+    class="solutions-tile"
+    data-parallax="scroll"
+    data-image-src="/assets/images/solutions-truckload-bg.jpg"
+  >
+    <a href="#"
+      ><button class="btn-red wow slideInLeft animated" data-wow-delay="0.4s">
+        TRUCKLOAD
+        <img src="/assets/images/btn-caret.png" /></button
+    ></a>
+  </section>
+  <section
+    class="solutions-tile"
+    data-parallax="scroll"
+    data-image-src="/assets/images/solutions-lastmile-bg.jpg"
+  >
+    <a href="#"
+      ><button class="btn-red wow slideInLeft animated" data-wow-delay="0.4s">
+        LOGISTICS
+        <img src="/assets/images/btn-caret.png" /></button
+    ></a>
+  </section>
+</div>
+
+{% endblock content %}
+
+<!-- <script type="text/javascript">
+  function ShowMod(ModId, ModTitle, ModImg, ModPos, ModCont) {
+    console.log(
+      ModId + "|" + ModTitle + "|" + ModImg + "|" + ModPos + "|" + ModCont
+    );
+    jQuery("#" + ModId).on("show.bs.modal", function (e) {
+      var modal = jQuery(this);
+      modal.find(".modal-title").text(ModTitle);
+      if (ModImg != "") {
+        modal.find(".modal-img").attr("src", ModImg);
+      } else {
+        modal.find(".modal-img").attr("src", "");
+      }
+      modal
+        .find(".modal-pos")
+        .html("<h6>" + ModPos + "</h6>" + "<p>" + ModCont + "</p>");
+    });
+    jQuery("#" + ModId).modal("show");
+  }
+
+  jQuery(document).ready(function ($) {
+    $("table").each(function () {
+      $(this).addClass("table-bordered");
+    });
+  });
+</script> -->
