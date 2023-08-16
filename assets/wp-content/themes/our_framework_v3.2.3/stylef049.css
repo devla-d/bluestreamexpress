@@ -2936,7 +2936,7 @@ span.wpcf7-not-valid-tip {
     text-transform: capitalize;
 }
 
-/* Style for *TFI International* in the title with span */
+/* Style for *{{domain}} * in the title with span */
 .documents .content h6 span {
     text-transform: none;
 }
