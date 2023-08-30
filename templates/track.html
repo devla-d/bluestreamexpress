@@ -410,6 +410,13 @@
                     </tr>
 
                     <tr>
+                      <td>Current Location</td>
+                      <td class="text-right">
+                        <span>{{package.current_location}}</span>
+                      </td>
+                    </tr>
+
+                    <tr>
                       <td>Status</td>
                       <td
                         class="text-right {% if package.status == 'PENDING' %} text-warning {% else %} text-success {% endif %}"
